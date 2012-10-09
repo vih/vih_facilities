@@ -1,0 +1,123 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  vih_facilities.features.field.inc: n/a
+#  vih_facilities.views_default.inc: n/a
+#  vih_facilities.features.inc: n/a
+#  vih_facilities.info: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2012-10-09 13:34+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: vih_facilities.features.field.inc:161 vih_facilities.views_default.inc:189
+msgid "Billede"
+msgstr ""
+
+#: vih_facilities.features.field.inc:162
+msgid "Body"
+msgstr ""
+
+#: vih_facilities.features.inc:30 vih_facilities.views_default.inc:175
+msgid "Faciliteter"
+msgstr ""
+
+#: vih_facilities.features.inc:32
+msgid "Beskrivelse af faciliteter."
+msgstr ""
+
+#: vih_facilities.features.inc:34
+msgid "Title"
+msgstr ""
+
+#: vih_facilities.views_default.inc:174
+msgid "Master"
+msgstr ""
+
+#: vih_facilities.views_default.inc:176
+msgid "mere"
+msgstr ""
+
+#: vih_facilities.views_default.inc:177
+msgid "Udfør"
+msgstr ""
+
+#: vih_facilities.views_default.inc:178
+msgid "Gendan"
+msgstr ""
+
+#: vih_facilities.views_default.inc:179
+msgid "Sortér efter"
+msgstr ""
+
+#: vih_facilities.views_default.inc:180
+msgid "Stigende"
+msgstr ""
+
+#: vih_facilities.views_default.inc:181
+msgid "Faldende"
+msgstr ""
+
+#: vih_facilities.views_default.inc:182
+msgid "Elementer pr. side"
+msgstr ""
+
+#: vih_facilities.views_default.inc:183
+msgid "- Alle -"
+msgstr ""
+
+#: vih_facilities.views_default.inc:184
+msgid "Forskydning"
+msgstr ""
+
+#: vih_facilities.views_default.inc:185
+msgid "« første"
+msgstr ""
+
+#: vih_facilities.views_default.inc:186
+msgid "‹ forrige"
+msgstr ""
+
+#: vih_facilities.views_default.inc:187
+msgid "næste ›"
+msgstr ""
+
+#: vih_facilities.views_default.inc:188
+msgid "sidste »"
+msgstr ""
+
+#: vih_facilities.views_default.inc:190
+msgid "Brødtekst"
+msgstr ""
+
+#: vih_facilities.views_default.inc:191
+msgid "Blok"
+msgstr ""
+
+#: vih_facilities.views_default.inc:192
+msgid "Thumbnails of facilities with titles."
+msgstr ""
+
+#: vih_facilities.info:0
+msgid "VIH Facilities"
+msgstr ""
+
+#: vih_facilities.info:0
+msgid "Facilities"
+msgstr ""
+
+#: vih_facilities.info:0
+msgid "VIH"
+msgstr ""
+
