@@ -128,7 +128,6 @@ function vih_facilities_views_default_views() {
   $handler = $view->new_display('block', 'Blok', 'facilities_block');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['display_description'] = 'Thumbnails of facilities with titles.';
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'grid';
   $handler->display->display_options['style_options']['grouping'] = '';
