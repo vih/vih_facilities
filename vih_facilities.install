@@ -1,0 +1,43 @@
+<?php
+/**
+ * @file
+ */
+
+/**
+ * Add panopoly featured_image field instead of the field_picture
+ */
+function vih_facilities_update_7000() {
+  $module = 'vih_facilities';
+  $bundle = 'vih_facilities';
+  $field_name = 'field_featured_image';
+  // Make sure the field doesn't already exist.
+  if (field_info_field($field_name)) {
+    watchdog($mdoule, t('!field_name already exists.', array('!field_name' => $field_name)));
+  }
+  else {
+    // Field should be created
+    // However it is already created in Panopoly
+  }  
+  // Create the instance.
+  $inst = field_info_instance('node', $field_name, $bundle);
+  if (!$inst) {
+    $instance = array(
+      'field_name' => $field_name,
+      'entity_type' => 'node',
+      'bundle' => $bundle,
+      'label' => 'Featured image',
+      'description' => '',
+      'required' => FALSE,
+    );
+    field_create_instance($instance);
+    watchdog($module, t('!field_name was added successfully to !bundle', array('!field_name' => $field_name, '!bundle' => $bundle)));
+  }
+
+  $nodes = node_load_multiple(null, array('type' => $bundle));
+  foreach ($nodes as $nx => $no) {
+    $no->field_featured_image = $no->field_picture;
+    node_save($no);
+  }
+  $inst = field_info_instance('node','field_picture', $bundle);
+  field_delete_instance($inst, false);
+}
