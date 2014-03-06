@@ -22,7 +22,7 @@ function vih_facilities_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'featured' => array(
         'label' => 'above',
@@ -60,8 +60,8 @@ function vih_facilities_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-vih_facilities-field_picture'
-  $field_instances['node-vih_facilities-field_picture'] = array(
+  // Exported field_instance: 'node-vih_facilities-field_featured_image'
+  $field_instances['node-vih_facilities-field_featured_image'] = array(
     'bundle' => 'vih_facilities',
     'deleted' => 0,
     'description' => '',
@@ -74,7 +74,7 @@ function vih_facilities_field_default_field_instances() {
           'image_style' => 'content_width',
         ),
         'type' => 'image',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'featured' => array(
         'label' => 'above',
@@ -90,39 +90,58 @@ function vih_facilities_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_picture',
-    'label' => 'Billede',
+    'field_name' => 'field_featured_image',
+    'label' => 'Featured image',
     'required' => 0,
     'settings' => array(
       'alt_field' => 1,
       'default_image' => 0,
-      'file_directory' => '',
+      'file_directory' => 'facilitites',
       'file_extensions' => 'png jpg jpeg',
       'focus' => 0,
       'focus_lock_ratio' => 0,
       'focus_min_size' => '',
+      'focus_required' => 0,
       'max_filesize' => '',
       'max_resolution' => '',
       'min_resolution' => '',
-      'title_field' => 0,
+      'title_field' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'media',
       'settings' => array(
-        'preview_image_style' => 'thumbnail',
+        'allowed_schemes' => array(
+          'private' => 0,
+          'public' => 'public',
+          'vimeo' => 0,
+          'youtube' => 0,
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
+          'media_internet' => 0,
+          'upload' => 'upload',
+          'youtube' => 0,
+        ),
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'image_image',
+      'type' => 'media_generic',
       'weight' => 2,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Billede');
   t('Body');
+  t('Featured image');
 
   return $field_instances;
 }

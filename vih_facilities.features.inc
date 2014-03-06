@@ -26,9 +26,9 @@ function vih_facilities_views_api($module = NULL, $api = NULL) {
 function vih_facilities_node_info() {
   $items = array(
     'vih_facilities' => array(
-      'name' => t('Faciliteter'),
+      'name' => t('Facilities'),
       'base' => 'node_content',
-      'description' => t('Beskrivelse af faciliteter.'),
+      'description' => t('Description of <em>facilities</em>'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

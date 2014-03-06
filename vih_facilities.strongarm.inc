@@ -37,6 +37,12 @@ function vih_facilities_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'featured' => array(
+        'custom_settings' => TRUE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -47,13 +53,13 @@ function vih_facilities_strongarm() {
           'weight' => '0',
         ),
         'redirect' => array(
-          'weight' => '4',
+          'weight' => '3',
         ),
         'xmlsitemap' => array(
           'weight' => '30',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '4',
         ),
       ),
       'display' => array(),
