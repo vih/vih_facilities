@@ -78,7 +78,7 @@ function vih_facilities_views_default_views() {
       'separator' => '',
     ),
   );
-  /* Felt: Felt: Image */
+  /* Felt: Felt: Primary Image */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
@@ -138,7 +138,7 @@ function vih_facilities_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Felt: Image */
+  /* Felt: Felt: Primary Image */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
@@ -172,7 +172,7 @@ function vih_facilities_views_default_views() {
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Felt: Image */
+  /* Felt: Felt: Primary Image */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
@@ -226,7 +226,7 @@ function vih_facilities_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Felt: Image */
+  /* Felt: Felt: Primary Image */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
