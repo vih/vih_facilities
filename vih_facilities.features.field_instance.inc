@@ -71,7 +71,7 @@ function vih_facilities_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'content_width',
+          'image_style' => 'panopoly_image_spotlight',
         ),
         'type' => 'image',
         'weight' => 0,
