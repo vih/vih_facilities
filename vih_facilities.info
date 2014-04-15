@@ -33,3 +33,5 @@ features[variable][] = node_options_vih_facilities
 features[variable][] = node_preview_vih_facilities
 features[variable][] = node_submitted_vih_facilities
 features[views_view][] = faciliteter
+
+files[] = vih_facilities.migrate.inc
