@@ -13,6 +13,7 @@ dependencies[] = strongarm
 dependencies[] = views
 dependencies[] = views_content
 dependencies[] = vih_core
+dependencies[] = vih_migrate
 datestamp = 1346221374
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
