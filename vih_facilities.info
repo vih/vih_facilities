@@ -20,6 +20,7 @@ features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[field_instance][] = node-vih_facilities-body
 features[field_instance][] = node-vih_facilities-field_featured_image
+features[field_instance][] = node-vih_facilities-field_pictures
 features[node][] = vih_facilities
 features[user_permission][] = create vih_facilities content
 features[user_permission][] = delete any vih_facilities content

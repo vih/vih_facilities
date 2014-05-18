@@ -47,19 +47,19 @@ function vih_facilities_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '3',
+          'weight' => '5',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'redirect' => array(
-          'weight' => '3',
+          'weight' => '4',
         ),
         'xmlsitemap' => array(
           'weight' => '30',
         ),
         'path' => array(
-          'weight' => '4',
+          'weight' => '6',
         ),
       ),
       'display' => array(),
