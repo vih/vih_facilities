@@ -9,6 +9,7 @@ dependencies[] = image
 dependencies[] = media
 dependencies[] = panopoly_core
 dependencies[] = panopoly_pages
+dependencies[] = radix_views
 dependencies[] = strongarm
 dependencies[] = views
 dependencies[] = views_content

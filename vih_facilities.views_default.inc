@@ -125,50 +125,6 @@ function vih_facilities_views_default_views() {
     'vih_facilities' => 'vih_facilities',
   );
 
-  /* Display: Blok */
-  $handler = $view->new_display('block', 'Blok', 'facilities_block');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['display_description'] = 'Thumbnails of facilities with titles.';
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'grid';
-  $handler->display->display_options['style_options']['grouping'] = '';
-  $handler->display->display_options['style_options']['columns'] = '3';
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Field: Image */
-  $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
-  $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
-  $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
-  $handler->display->display_options['fields']['field_featured_image']['label'] = '';
-  $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
-    'image_style' => 'panopoly_image_square',
-    'image_link' => 'content',
-  );
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = 'Brødtekst';
-  $handler->display->display_options['fields']['body']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['body']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
-  $handler->display->display_options['fields']['body']['settings'] = array(
-    'trim_length' => '600',
-  );
-  $handler->display->display_options['block_caching'] = '8';
-
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -219,8 +175,9 @@ function vih_facilities_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Klik dig rundt i vores faciliteter';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'grid';
-  $handler->display->display_options['style_options']['columns'] = '3';
+  $handler->display->display_options['style_plugin'] = 'radix_views_grid_plugin_style';
+  $handler->display->display_options['style_options']['views_group_col_class'] = 'col-lg-4 col-md-6 col-sm-12';
+  $handler->display->display_options['style_options']['views_row_col_class'] = 'col-lg-4 col-md-6 col-sm-12';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -273,10 +230,8 @@ function vih_facilities_views_default_views() {
     t('sidste »'),
     t('Billede'),
     t('Brødtekst'),
-    t('Blok'),
-    t('Thumbnails of facilities with titles.'),
-    t('more'),
     t('Content pane'),
+    t('more'),
     t('Published'),
     t('VIH Admin'),
     t('Overview Pane'),
