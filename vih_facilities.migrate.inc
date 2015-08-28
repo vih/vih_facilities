@@ -7,8 +7,8 @@
 
 class VIHFacilities extends VIHMigration {
 
-  public function __construct() {
-    parent::__construct();
+  public function __construct(array $arguments = array()) {
+    parent::__construct($arguments);
     $this->description = t('Import facilities from CSV file.');
 
     // Create a map object for tracking the relationships between source rows
