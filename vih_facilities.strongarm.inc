@@ -53,13 +53,13 @@ function vih_facilities_strongarm() {
           'weight' => '0',
         ),
         'redirect' => array(
-          'weight' => '4',
+          'weight' => '6',
         ),
         'xmlsitemap' => array(
-          'weight' => '30',
+          'weight' => '8',
         ),
         'path' => array(
-          'weight' => '6',
+          'weight' => '7',
         ),
       ),
       'display' => array(),

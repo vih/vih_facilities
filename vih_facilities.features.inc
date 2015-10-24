@@ -28,7 +28,7 @@ function vih_facilities_node_info() {
     'vih_facilities' => array(
       'name' => t('Facilities'),
       'base' => 'node_content',
-      'description' => t('Description of <em>facilities</em>'),
+      'description' => t('<em>Facilities</em> is used to describe the different facilities.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
