@@ -55,7 +55,7 @@ function vih_facilities_default_page_manager_handlers() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Facilities';
+  $display->title = '';
   $display->uuid = '45ed476f-e5ba-4631-99fb-d696d18c0080';
   $display->content = array();
   $display->panels = array();
